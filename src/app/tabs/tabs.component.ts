@@ -1,14 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms'
 
 @Component({
-  selector: 'app-root',
-  templateUrl: 'tabs.component.html',
-  styleUrls: ['tabs.component.css']
+  selector: 'app-tab',
+  templateUrl: './tabs.component.html',
+  styleUrls: ['./tabs.component.scss']
 })
-export class Tabs {
-  public tabs = ['Truma', 'Cardio', 'Kidney']
 
-  constructor () {
-
-  }
+export class AppTab implements OnInit {
+  public tabs =  ['Tab1', 'Tab2', 'Tab3', 'Tab4'];
+ 
 }
+

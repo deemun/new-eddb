@@ -1,6 +1,9 @@
-/* tslint:disable:no-unused-variable */
+import { TestBed } from '@angular/core/testing';
+import { provideRoutes } from '@angular/router';
+import { RouterTestingModule } from '@angular/router/testing';
+import { Http } from '@angular/http';
 
-import { TestBed, async } from '@angular/core/testing';
+import { ApiService } from './shared';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {

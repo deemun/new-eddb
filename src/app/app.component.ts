@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+import '../style/app.scss';
 
 @Component({
-  selector: 'app-root',
+  selector: 'eddb-app',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'app works!';
+  name: string = 'welcome to eddb';
 }
