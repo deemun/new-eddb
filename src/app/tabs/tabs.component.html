@@ -6,6 +6,11 @@
         <div *ngFor="let tab of tabs" class="navbarButton">
             <a>{{tab}}</a>
         </div>
-        
+        <form [formGroup]="tabInput" (onsubmit)="createTab(tabInput)">
+            <div class="navbarButton" >
+                <input type="text" formControlName="tabValue"/>
+                
+            </div>
+        </form>
     </div>
 </div>
